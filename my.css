@@ -937,22 +937,6 @@ textarea:focus {
     box-shadow: 0 0 25px #19dcff;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contact .heading {
-        font-size: 4rem;
-    }
-    .contact form {
-        padding: 4rem;
-    }
-    .input-box input {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-}
-
-
-
 /* ===== FOOTER SECTION ===== */
 .footer {
     background: linear-gradient(135deg, #00001c, #000019);
@@ -962,6 +946,52 @@ textarea:focus {
     position: relative;
     overflow: hidden;
 }
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .contact {
+        padding: 10rem 8%;
+    }
+
+    .contact .heading {
+        font-size: 4rem;
+    }
+
+    .contact form {
+        padding: 4rem;
+    }
+
+    .input-box input {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .btn {
+        padding: 1.8rem 5rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        width: 100%; /* Button ko full width karne ke liye */
+        padding: 1.5rem 4rem; /* Chhota padding */
+        font-size: 1.6rem; /* Font size adjust */
+    }
+
+    .contact {
+        padding: 8rem 5%;
+    }
+
+    .contact .heading {
+        font-size: 3.5rem;
+    }
+
+    .contact form {
+        padding: 3rem;
+    }
+}
+
 
 /* Footer Icons */
 .footer .icon {
